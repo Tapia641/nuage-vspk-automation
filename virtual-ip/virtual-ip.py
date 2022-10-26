@@ -66,6 +66,9 @@ class API():
         self.nuage_user = session.user
 
     def get_enterprises(self):
+        """
+        Collect all enterprises considering the limit of 500 per request to the API.
+        """
         logging.info('Getting list of Enterprises')
 
         # GET TOTAL ENTEPRISES WITHOUT LIMIT (ONLY MEMORY)
@@ -90,6 +93,9 @@ class API():
         return None
 
     def read_csv(self):
+        """
+        Collect the information for the prechecks of Oracle DSR with all vIPs in a subnet
+        """
 
         #READ THE FILE NAME
         filename = 'virtual-ip.csv'
