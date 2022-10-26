@@ -1,0 +1,7 @@
+#LABORATORY
+nuage:
+  user: 'csproot'
+  password: 'csproot'
+  organization: 'csp'
+  vsd: '135.121.242.214:8443'
+
